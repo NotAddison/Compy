@@ -1,0 +1,198 @@
+/**
+ * @name Enfix
+ * @author Addison Chua
+ * @authorLink https://github.com/NotAddison
+ * @version 0.0.1
+ * @description A simple modern discord theme. Dark theme is required
+ * @source https://github.com/NotAddison/Enfix
+ * @website https://notaddison.github.io/Portfolio/
+*/
+
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/UsrBgs.css");
+
+
+/* ---------------- [ Horizontal Server List ]  ----------------*/
+:root {
+  --HSL-server-icon-size: 40px;  /* Size of the server icons | DEFAULT: 40px */
+  --HSL-server-spacing: 10px;  /* Spacing between each server icon | DEFAULT: 10px */
+  --HSL-server-direction: column; /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
+    /* Bottom HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
+    /* @import url("https://discordstyles.github.io/Addons/bottomhsl.css"); */
+}
+
+
+/* ---------------- [ Radial Status ]  ----------------*/
+:root {
+    --rs-small-spacing: 2px;                      /* Gap between avatar and status for members list/dms | MUST end in px */
+    --rs-medium-spacing: 3px;                     /* Gap between avatar and status for User popout | MUST end in px */
+    --rs-large-spacing: 4px;                      /* Gap between avatar and status for User profiles | MUST end in px */
+  
+    --rs-small-width: 1px;                        /* Thickness of status border for members list/dms | MUST end in px */
+    --rs-medium-width: 2px;                       /* Thickness of status border for User popout | MUST end in px */
+    --rs-large-width: 3px;                        /* Thickness of status border for User profile | MUST end in px */
+  
+    --rs-avatar-shape: 50%;                       /* 50% for round - 0% for square */
+  
+    --rs-online-color: #43b582;                 /* Colour for online status */
+    --rs-idle-color: #faa81a;                   /* Colour for idle status */
+    --rs-dnd-color: #f04747;                    /* Colour for dnd status */
+    --rs-offline-color: #636b75;                /* Colour for offline status */
+    --rs-streaming-color: #643da7;              /* Colour for streaming status */
+    --rs-invisible-color: #747f8d;              /* Colour for invisible status - Note: this will only show for your own invisibility */
+    --rs-phone-color: var(--rs-online-color);     /* Colour of the ring and phone icon when a user is on their phone |  */
+  
+    --rs-phone-visible: block;                    /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+  }
+
+:root{
+    /* --font-primary: "Segoe UI", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    --font-display: "Bahnschrift", Ginto, "Pretendard SemiBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-code: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    --font-korean: Pretendard, "Apple SD Gothic Neo", "NanumBarunGothic", "맑은 고딕", "Malgun Gothic", Gulim, 굴림, Dotum, 돋움, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-japanese: Whitney, Hiragino Sans, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Osaka, "MS PGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-chinese-simplified: Whitney, "Microsoft YaHei New", 微软雅黑, "Microsoft Yahei", "Microsoft JhengHei", 宋体, SimSun, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-chinese-traditional: Whitney, "Microsoft JhengHei", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft YaHei", 微軟雅黑, 宋体, SimSun, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    /*My Account Button*/
+    --username-button-width: 128px; /* Adjust the width of the username button to match your discord username lenght */
+    --username-button-padding: 6px; /* Padding for the username button */
+    --username-button-right-margin: 12px; /* Width between the username button and the window controls */
+    --username-text-width: 100px; /* Adjust the width of the username text. (Just do minus 28 from the --username-button-width. */
+
+    /*Server List*/
+    --server-icon-size: 40px;  /* Size of the server icons */
+    --server-outer-margin: 14px;  /* Spacing between the edge of the container and the server icons.*/
+    --server-spacing: 10px;  /* Spacing between each server icon*/
+
+    /*Server Info Bar*/
+    --app-info-bar-height: 48px; /* Height for container that holds the server name, info, actions and search */
+}
+
+/* --- User Status --- */
+.activity-2EQDZv,.header-2Kx1US,.item-3XjbnG,.name-28HaxV,.topic-11NuQZ,.usernameFont-2oJxoI {
+    font-weight: 400
+}
+
+/* --- User Member List Username Text--- */
+.name-3Vmqxm,.username-h_Y3Us {
+    /* font-family: var(--font-display); */
+    font-weight: 500
+}
+
+/* --- Main Discord Theme--- */
+.guild-profile,.theme-dark,.theme-dark .theme-light,.userInfo-regn9W,[aria-label="User Profile Modal"],[class^=profileBannerPreview],[class^=userPopout] {
+    
+    /* --- Main Feature Settings --- */
+        --background-primary: #101010;                          /* Discord Background Colour*/
+        --background-secondary-alt: transparent;                  /* Discord Main User Preview (Bottom Left ; Username, Mute, Deafend, Settings container)*/
+        --background-tertiary: #101010;                         /* Discord Main Outer Border Colours (Server Selector background & Window bar) */
+        --channeltextarea-background: #1e1e1e82;                /* Chat Box */
+        --background-floating: #191919f1;                       /* Discord Server User Card & Popout options text background */
+
+    /* --- Text Settings --- */
+        --text-normal: #dedede;                                 /* Text Colour*/
+        --text-muted: #787878;                                  /* Text Colour but for muted text*/
+        --text-link: #00b0f4;                                   /* Text Colour for links*/
+        --text-positive: #4fdc7b;                               /* Text Colour for positive text*/
+        --embed-color: hsl(0, 0%, 34%);                         /* Embed Colour (???)*/
+    
+
+    /* --- Scrollbar Settings --- */
+    /* >> Side channel scrollbar */
+        --scrollbar-thin-thumb: #313131;
+        --scrollbar-thin-track: transparent;
+    /* >> Main Text Scrollbar */
+        --scrollbar-auto-thumb: #313131;
+        --scrollbar-auto-track: #24242455;
+    
+    /* --- Server Channel Settings --- */
+        --channels-default: #919191;                            /* Active Channel Text Colour */
+        --interactive-muted: #555555;                           /* Muted Text Colour */
+        --header-primary: #fff;                                 /* Server Title */
+        --header-secondary: #bdbdbd;                            /* Server Text Settings Colour & Channel Topic */
+        --background-accent: hsl(0, 0%, 34%);                   /* Server Boost Small Icon (top right, beisde server name) */
+        
+
+    /* --- Server Interactable Buttons --- */
+    --interactive-normal: #b0b0b0;                              /* Chat Gif Button, Pin Button, Thread Button, etc.*/
+    --interactive-hover: #ffffff;                               /* Hover State */
+    --interactive-active: rgb(255, 255, 255);                   /* Active State */
+    
+    
+    --background-primary-transparent: rgba(26, 26, 26, 0.6);   
+    --background-transparent-header: rgba(49, 49, 49, 0.5);
+    
+    /* --- Settings --- */
+    --background-secondary: #161616a4;                          /* Settings Background & Member List Background & Plugin Header container */
+    --activity-card-background: #242424;
+    --background-modifier-hover: rgba(0, 0, 0, 0.2);
+    --background-modifier-active: rgba(87, 87, 87, 0.24);
+    --background-modifier-selected: rgba(100, 100, 100, 0.2);
+    --background-modifier-accent: rgba(255, 255, 255, 0.2);
+    
+    
+    /* >> Unknown Settings */
+        --background-floating-alt: var(--background-tertiary);
+        --background-mobile-primary: var(--background-tertiary);
+        --background-mobile-secondary: var(--background-tertiary); 
+        --background-secondary-alpha: var(--background-tertiary);
+
+        --deprecated-quickswitcher-input-background: #191919b7;
+        --deprecated-text-input-border-hover: #e30101;
+        --deprecated-text-input-border-disabled: #e30101;
+        --deprecated-text-input-prefix: #e30101;
+}
+
+/* --- Light Theme Option 🤮 --- */
+.theme-light {
+    --background-primary: #000000; 
+}
+
+/* --- Popout Borders --- */
+.FriendNotifications-modal:before,.container-1ILvLB:before,.container-2McqkF:before,.container-18GwIk:before,.container-2ebMPP:before,.drawerSizingWrapper-1txdWG:before,.menu-1QACrS:before,
+.messagesPopoutWrap-3zryHW:before,.noiseCancellationPopout-2-e5Xz:before,.popoutContainer-2wbmiM:before,.profileBannerPreview-3_l0Wd:before,.root-g14mjS:before,.root-3bVOP7:before,
+.root-8LYsGj:before,.streamPreview-3qoMP4:before,.toolbar-37BrJ5:before,.uploadModal-2ie9O_:before,.userPopout-2j1gM4:before,.wrapper-2vIMkT:before 
+{
+    border: 1px var(--background-modifier-accent) transparent;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+    z-index: 2;
+    pointer-events: none;
+    border-radius: var(--context-menu-border-radius)
+}
+
+/* --- Search Bar --- */
+#search-results {
+    width: 320px !important
+}
+
+.searchResultsWrap-5RVOkx #search-results {
+    width: unset !important
+}
+
+.search-2Mwzzq .DraftEditor-root .public-DraftEditor-content,
+.search-2Mwzzq .DraftEditor-root .public-DraftEditorPlaceholder-root {
+    padding-left: 8px;
+    padding-bottom: 0;
+    padding-top: 0
+}
+
+.searchAnswer-23w-CH,
+.searchFilter-2UfsDk {
+    background-color: transparent !important
+}
+
+.searchAnswer-23w-CH span[data-text=true],
+.searchFilter-2UfsDk span[data-text=true] {
+    background-color: var(--search-bar-cat);
+    padding: 2px 4px;
+    border-radius: 3px
+}
