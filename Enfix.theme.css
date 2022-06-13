@@ -11,7 +11,6 @@
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 @import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
-@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/UsrBgs.css");
 
 
 /* ---------------- [ Horizontal Server List ]  ----------------*/
@@ -82,6 +81,18 @@
     --app-info-bar-height: 48px; /* Height for container that holds the server name, info, actions and search */
 }
 
+/* --- Main Friend List (Friend overview, who are online and stuff) --- */
+/* 9. Friends */
+.peopleColumn-1wMU14 {
+	background-color: var(--background-primary);
+}
+.theme-dark .text-27cdrj, .theme-dark .title-2CL_z0 {
+	color: var(--text); 
+}
+.wrapper-2RrXDg{
+    border-style: none;
+}
+
 /* --- User Status --- */
 .activity-2EQDZv,.header-2Kx1US,.item-3XjbnG,.name-28HaxV,.topic-11NuQZ,.usernameFont-2oJxoI {
     font-weight: 400
@@ -91,6 +102,12 @@
 .name-3Vmqxm,.username-h_Y3Us {
     /* font-family: var(--font-display); */
     font-weight: 500
+}
+
+/* --- Channel Container --- */
+.sidebar-1tnWFu{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* --- Main Discord Theme--- */
@@ -208,13 +225,11 @@
     padding-top: 0
 }
 
-.searchAnswer-23w-CH,
-.searchFilter-2UfsDk {
+.searchAnswer-23w-CH,.searchFilter-2UfsDk {
     background-color: transparent !important
 }
 
-.searchAnswer-23w-CH span[data-text=true],
-.searchFilter-2UfsDk span[data-text=true] {
+.searchAnswer-23w-CH span[data-text=true],.searchFilter-2UfsDk span[data-text=true] {
     background-color: var(--search-bar-cat);
     padding: 2px 4px;
     border-radius: 3px
@@ -224,38 +239,23 @@
 #app-mount .userPopout-2j1gM4 .headerTop-3GPUSF {
     padding: 80px 16px 16px
 }
-
 .banner-1YaD3N {
     background-image: var(--user-background, inherit)
 }
-
 .phPromoBanner-3iexBk {
     margin: auto;
 }
-
-.auPromo-Gk5s48, .auPromoSelected-336Wc2,
-.badgeIconSettingsMenu-39c26C {
+.auPromo-Gk5s48, .auPromoSelected-336Wc2,.badgeIconSettingsMenu-39c26C {
     display: none;
 }
-
 .localizeBadge-24ZXps {
     background-color: transparent;
 }
-
-.bannerNormal-22rPhb,
-html #app-mount .bannerNitroUpsell-3f4I57,
-html #app-mount .userPopout-2j1gM4 .popoutBanner-3cqRD9,
-html #app-mount .userPopout-2j1gM4 .profileBanner-1owKI5 {
+.bannerNormal-22rPhb,html #app-mount .bannerNitroUpsell-3f4I57,html #app-mount .userPopout-2j1gM4 .popoutBanner-3cqRD9,html #app-mount .userPopout-2j1gM4 .profileBanner-1owKI5 {
     height: unset !important;
     max-height: unset !important
 }
-
-.banner-1YaD3N:before,
-.bannerNitroUpsell-3f4I57,
-.bannerNormal-22rPhb,
-.bannerNormal-22rPhb:before,
-.bannerPremium-kkSkPv,
-.bannerUploaderInnerSquare-1ddxpx:before {
+.banner-1YaD3N:before,.bannerNitroUpsell-3f4I57,.bannerNormal-22rPhb,.bannerNormal-22rPhb:before,.bannerPremium-kkSkPv,.bannerUploaderInnerSquare-1ddxpx:before {
     position: absolute;
     left: 0;
     right: 0;
@@ -263,13 +263,7 @@ html #app-mount .userPopout-2j1gM4 .profileBanner-1owKI5 {
     top: 0;
     border-radius: var(--context-menu-border-radius)
 }
-
-.UserBackgrounds-banner-container,
-.banner-1YaD3N,
-.bannerUploader-3AZuN1,
-.bannerUploaderInnerSquare-1ddxpx,
-.headerNormal-3Zn_yu,
-.popoutBannerPremium-3i5EEI {
+.UserBackgrounds-banner-container,.banner-1YaD3N,.bannerUploader-3AZuN1,.bannerUploaderInnerSquare-1ddxpx,.headerNormal-3Zn_yu,.popoutBannerPremium-3i5EEI {
     position: absolute !important;
     left: 0;
     right: 0;
@@ -278,96 +272,65 @@ html #app-mount .userPopout-2j1gM4 .profileBanner-1owKI5 {
     width: unset !important;
     height: unset !important
 }
-
-.banner-1YaD3N:hover .bannerOverlay-1uIerX,
-.banner-1YaD3N:hover .pencilIcon-z04-c5 {
+.banner-1YaD3N:hover .bannerOverlay-1uIerX,.banner-1YaD3N:hover .pencilIcon-z04-c5 {
     opacity: 0
 }
-
 .bannerOverlayPopout-1clJ34 {
     -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .2), inset 0 0 120px rgba(0, 0, 0, .6);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .2), inset 0 0 120px rgba(0, 0, 0, .6);
     box-sizing: border-box
 }
-
-.profileBannerPreview-3_l0Wd .avatarUploaderHint-2ZdBlc,
-.profileBannerPreview-3_l0Wd .avatarUploaderIndicator-2G-aIZ,
-.profileBannerPreview-3_l0Wd .avatarUploaderInner-yEhTv5 [class^=fileInput],
-.profileBannerPreview-3_l0Wd .bannerUploaderInnerSquare-1ddxpx [class^=fileInput] {
+.profileBannerPreview-3_l0Wd .avatarUploaderHint-2ZdBlc,.profileBannerPreview-3_l0Wd .avatarUploaderIndicator-2G-aIZ,.profileBannerPreview-3_l0Wd .avatarUploaderInner-yEhTv5 [class^=fileInput],.profileBannerPreview-3_l0Wd .bannerUploaderInnerSquare-1ddxpx [class^=fileInput] {
     display: none !important
 }
-
-.avatarUploaderInner-yEhTv5:focus-within,
-.avatarUploaderInner-yEhTv5:hover {
+.avatarUploaderInner-yEhTv5:focus-within,.avatarUploaderInner-yEhTv5:hover {
     -webkit-box-shadow: none;
     box-shadow: none
 }
-
-.avatarUploaderInner-yEhTv5,
-.bannerOverlay-1uIerX {
+.avatarUploaderInner-yEhTv5,.bannerOverlay-1uIerX {
     pointer-events: none
 }
-
 html #app-mount .userPopout-2j1gM4 .avatarPositionPremium-1zPBq9 {
     top: 76px !important
 }
-
-.profileBannerPreview-3_l0Wd .headerTop-3GPUSF,
-.userInfo-regn9W,
-html #app-mount .userPopout-2j1gM4 .avatarPositionPremium-1zPBq9~.headerTop-3GPUSF {
+.profileBannerPreview-3_l0Wd .headerTop-3GPUSF,.userInfo-regn9W,html #app-mount .userPopout-2j1gM4 .avatarPositionPremium-1zPBq9~.headerTop-3GPUSF {
     margin-top: 100px;
     position: relative
 }
-
-.background-3d_SjE,
-.popoutInfo-pKbpvG,
-.userInfo-regn9W {
+.background-3d_SjE,.popoutInfo-pKbpvG,.userInfo-regn9W {
     position: relative
 }
-
 .avatar-3mTjvZ {
     top: 0
 }
-
 .userInfo-regn9W {
     margin-bottom: 20px
 }
-
 .background-3d_SjE {
     border-radius: 8px;
     background-color: var(--background-secondary);
     padding: 16px;
-    margin-top: 8px;
+    margin-top: 30px;
     margin-right: 16px;
     margin-bottom: 16px;
     margin-left: 16px
 }
-
 html #app-mount .userPopout-2j1gM4 .avatarPositionNormal-2jWoC2 {
     top: 26px !important
 }
-
 .bannerNormal-22rPhb~.headerTop-3GPUSF,
 html #app-mount .userPopout-2j1gM4 .avatarPositionNormal-2jWoC2~.headerTop-3GPUSF {
     margin-top: 50px
 }
-
-.headerTop-3GPUSF,
-.rolesList-3uZoaa,
-.headerTextNormal-2mGWX3,
-.customStatus-oN4ZZY,
-.aboutMeTitle-3pjiS7,
-customStatus-3XAoF9 {
+.headerTop-3GPUSF,.rolesList-3uZoaa,.headerTextNormal-2mGWX3,.customStatus-oN4ZZY,.aboutMeTitle-3pjiS7,customStatus-3XAoF9 {
     display: flex;
     justify-content: center;
     text-align: center;
 }
-
 .avatarWrapperNormal-ahVUaC {
     position: absolute;
     left: 34%;
 }
-
 .profileBadges-2pItdR {
     display: flex;
     flex-direction: column;
@@ -378,51 +341,28 @@ customStatus-3XAoF9 {
     position: absolute;
     transform: translate(-250px);
 }
-
-.userPopout-xaxa6l .input-cIJ7To,
-.aboutMeSection-PUghFQ,
-.bodyTitle-2Az3VQ,
-.textarea-_59yqs,
-.marginBottom8-AtZOdT.size14-e6ZScH,
-customStatus-3XAoF9 {
+.userPopout-xaxa6l .input-cIJ7To,.aboutMeSection-PUghFQ,.bodyTitle-2Az3VQ,.textarea-_59yqs,.marginBottom8-AtZOdT.size14-e6ZScH,customStatus-3XAoF9 {
     text-align: center;
 }
-
-
 .profileBannerPreview-3_l0Wd {
     background-color: transparent
 }
-
-html #app-mount .userPopout-2j1gM4 .avatarPositionNormal-2jWoC2,
-html #app-mount .userPopout-2j1gM4 .avatarPositionPremium-1zPBq9 {
+html #app-mount .userPopout-2j1gM4 .avatarPositionNormal-2jWoC2,html #app-mount .userPopout-2j1gM4 .avatarPositionPremium-1zPBq9 {
     margin-top: unset !important
 }
-
-.avatar-3mTjvZ,
-.avatar-2Vndt_,
-.avatar-3QF_VA,
-.avatarUploaderInner-Oiob_P {
+.avatar-3mTjvZ,.avatar-2Vndt_,.avatar-3QF_VA,.avatarUploaderInner-Oiob_P {
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, .205))
 }
-
 .header-S26rhB {
     top: -75px
 }
-
 .nameTag-2Nlmsy.nameTag-H6kSJ0 {
     margin-top: 200px
 }
-
 .customStatusActivity-WKWGD- {
     position: relative
 }
-
-.banner-1YaD3N:after,
-.banner-1YaD3N:before,
-.bannerNormal-22rPhb:after,
-.bannerNormal-22rPhb:before,
-.bannerUploaderInnerSquare-1ddxpx:after,
-.bannerUploaderInnerSquare-1ddxpx:before {
+.banner-1YaD3N:after,.banner-1YaD3N:before,.bannerNormal-22rPhb:after,.bannerNormal-22rPhb:before,.bannerUploaderInnerSquare-1ddxpx:after,.bannerUploaderInnerSquare-1ddxpx:before {
     content: "";
     position: absolute;
     top: 0;
@@ -431,16 +371,11 @@ html #app-mount .userPopout-2j1gM4 .avatarPositionPremium-1zPBq9 {
     background-position: 50%;
     background-size: cover
 }
-
 .userPopout-2j1gM4 {
     width: 300px !important;
     position: relative
 }
-
-.banner-1YaD3N:after,
-.bannerNormal-22rPhb:after,
-.bannerUploaderInnerSquare-1ddxpx:after,
-[class^=bannerNitroUpsell] {
+.banner-1YaD3N:after,.bannerNormal-22rPhb:after,.bannerUploaderInnerSquare-1ddxpx:after,[class^=bannerNitroUpsell] {
     background-image: inherit !important;
     background-color: inherit !important;
     --mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.15) 85%, rgba(0, 0, 0, 0.075) 90.5%, rgba(0, 0, 0, 0.037) 94.85%, rgba(0, 0, 0, 0.019) 98%, rgba(0, 0, 0, 0) 100%);
@@ -450,48 +385,32 @@ html #app-mount .userPopout-2j1gM4 .avatarPositionPremium-1zPBq9 {
     width: 100%;
     pointer-events: none
 }
-
 .topSection-13QKHs .banner-1YaD3N:after {
     height: 260px
 }
-
-#app-mount .popoutBanner-3cqRD9::before,
-#app-mount .profileBanner-1owKI5::before,
-.banner-1YaD3N:before,
-.bannerNormal-22rPhb:before,
-.bannerUploaderInnerSquare-1ddxpx:before {
+#app-mount .popoutBanner-3cqRD9::before,#app-mount .profileBanner-1owKI5::before,.banner-1YaD3N:before,.bannerNormal-22rPhb:before,.bannerUploaderInnerSquare-1ddxpx:before {
     bottom: 0;
     background: rgba(0, 0, 0, .493) !important;
     opacity: 1;
     backdrop-filter: blur(128px)
 }
-
-.banner-1YaD3N.profileBanner-1owKI5:after,
-.banner-1YaD3N:not(.user-background):not(.bannerPremium-kkSkPv):after,
-.bannerNormal-22rPhb:after {
+.banner-1YaD3N.profileBanner-1owKI5:after,.banner-1YaD3N:not(.user-background):not(.bannerPremium-kkSkPv):after,.bannerNormal-22rPhb:after {
     --gradient-size: 100%;
     --mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0.3) calc(var(--gradient-size) * .5), rgba(0, 0, 0, 0.15) calc(var(--gradient-size) * .65), rgba(0, 0, 0, 0.075) calc(var(--gradient-size) * .755), rgba(0, 0, 0, 0.037) calc(var(--gradient-size) * .8285), rgba(0, 0, 0, 0.019) calc(var(--gradient-size) * .88), rgba(0, 0, 0, 0) var(--gradient-size));
     background-color: inherit;
     height: 240px
 }
-
-.banner-1YaD3N.profileBanner-1owKI5:before,
-.banner-1YaD3N:not(.user-background):not(.bannerPremium-kkSkPv):before,
-.bannerNormal-22rPhb:before {
+.banner-1YaD3N.profileBanner-1owKI5:before,.banner-1YaD3N:not(.user-background):not(.bannerPremium-kkSkPv):before,.bannerNormal-22rPhb:before {
     background-color: rgba(0, 0, 0, .35);
     backdrop-filter: brightness(.4) saturate(1)
 }
-
-.bodyInnerWrapper-2bQs1k,
-.footer-3naVBw {
+.bodyInnerWrapper-2bQs1k,.footer-3naVBw {
     background-color: transparent
 }
-
 #app-mount .root-8LYsGj .profileBanner-1owKI5 {
     height: unset !important;
     max-height: unset !important
 }
-
 .UserBackgrounds-banner-container .UserBackgrounds-banner-badge {
     bottom: unset !important;
     position: absolute;
@@ -499,9 +418,7 @@ html #app-mount .userPopout-2j1gM4 .avatarPositionPremium-1zPBq9 {
     right: 8px;
     background-color: rgba(32, 34, 37, .8) !important
 }
-
-.UserBackgrounds-banner-container .UserBackgrounds-banner-arrow,
-.UserBackgrounds-banner-container .UserBackgrounds-banner-badge {
+.UserBackgrounds-banner-container .UserBackgrounds-banner-arrow,.UserBackgrounds-banner-container .UserBackgrounds-banner-badge {
     opacity: 0;
     -webkit-transform: translate3d(0, -5px, 0);
     transform: translate3d(0, -5px, 0);
@@ -510,14 +427,11 @@ html #app-mount .userPopout-2j1gM4 .avatarPositionPremium-1zPBq9 {
     transition: opacity .15s ease-out, transform .15s ease-out;
     transition: opacity .15s ease-out, transform .15s ease-out, -webkit-transform .15s ease-out
 }
-
-.UserBackgrounds-banner-container:hover .UserBackgrounds-banner-arrow,
-.UserBackgrounds-banner-container:hover .UserBackgrounds-banner-badge {
+.UserBackgrounds-banner-container:hover .UserBackgrounds-banner-arrow,.UserBackgrounds-banner-container:hover .UserBackgrounds-banner-badge {
     opacity: 1;
     -webkit-transform: translateZ(0);
     transform: translateZ(0)
 }
-
 .UserBackgrounds-banner-arrow {
     position: absolute;
     top: 0;
@@ -526,28 +440,28 @@ html #app-mount .userPopout-2j1gM4 .avatarPositionPremium-1zPBq9 {
     padding-bottom: 20px;
     box-sizing: border-box
 }
-
 .UserBackgrounds-banner-arrow.UserBackgrounds-banner-right {
     left: calc(32px + 8px);
     right: unset !important
 }
-
 .UserBackgrounds-banner-arrow.UserBackgrounds-banner-left {
     left: 8px !important
 }
-
 .UserBackgrounds-banner-arrow.sizeTiny-EgeIrh {
     width: 32px;
     height: 24px;
     min-width: 32px;
     min-height: 24px
 }
-
 .UserBackgrounds-banner-arrow svg {
     color: var(--interactive-normal)
 }
-
 .UserBackgrounds-banner-arrow:hover svg {
     color: var(--interactive-hover)
 }
 
+  /* --- {FIX} User Setting Information Background */
+  .fieldList-in8WkP{
+    background-color: transparent;
+  }
+  
