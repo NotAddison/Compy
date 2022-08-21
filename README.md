@@ -1,2 +1,2 @@
 # Enfix
-Custom Discord Theme
+Custom Discord Theme ; Optimized for vertical monitors 
