@@ -2,8 +2,8 @@
  * @name Enfix
  * @author Addison Chua
  * @authorLink https://github.com/NotAddison
- * @version 1.0.0
- * @description Custom Theme Made For Vertical Monitor Users <3. Dark theme is required
+ * @version 0.0.2
+ * @description A simple modern discord theme. Dark theme is required
  * @source https://github.com/NotAddison/Enfix
  * @website https://notaddison.github.io/Portfolio/
 */
@@ -21,7 +21,6 @@
     /* Bottom HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
     /* @import url("https://discordstyles.github.io/Addons/bottomhsl.css"); */
 }
-
 
 /* ---------------- [ Radial Status ]  ----------------*/
 :root {
@@ -55,7 +54,6 @@
     z-index: 1;
   }
 
-  
 /* ---------------- [ Main Theme ]  ----------------*/
 :root{
     /* --font-primary: "Segoe UI", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif; */
@@ -80,6 +78,64 @@
     /*Server Info Bar*/
     --app-info-bar-height: 48px; /* Height for container that holds the server name, info, actions and search */
 }
+
+    /* Colour & Stuff */
+    .guild-profile,.theme-dark,.theme-dark .theme-light,.userInfo-regn9W,[aria-label="User Profile Modal"],[class^=profileBannerPreview],[class^=userPopout] {
+        
+        /* --- Main Feature Settings --- */
+            --background-primary: #101010;                          /* Discord Background Colour*/
+            --background-secondary-alt: transparent;                  /* Discord Main User Preview (Bottom Left ; Username, Mute, Deafend, Settings container)*/
+            --background-tertiary: #101010;                         /* Discord Main Outer Border Colours (Server Selector background & Window bar) */
+            --channeltextarea-background: #1e1e1e82;                /* Chat Box */
+            --background-floating: #191919f1;                       /* Discord Server User Card & Popout options text background */
+
+        /* --- Text Settings --- */
+            --text-normal: #dedede;                                 /* Text Colour*/
+            --text-muted: #787878;                                  /* Text Colour but for muted text*/
+            --text-link: #00b0f4;                                   /* Text Colour for links*/
+            --text-positive: #4fdc7b;                               /* Text Colour for positive text*/
+            --embed-color: hsl(0, 0%, 34%);                         /* Embed Colour (???)*/
+
+        /* --- Scrollbar Settings --- */
+        /* >> Side channel scrollbar */
+            --scrollbar-thin-thumb: #313131;
+            --scrollbar-thin-track: transparent;
+        /* >> Main Text Scrollbar */
+            --scrollbar-auto-thumb: #313131;
+            --scrollbar-auto-track: #24242455;
+        
+        /* --- Server Channel Settings --- */
+            --channels-default: #919191;                            /* Active Channel Text Colour */
+            --interactive-muted: #555555;                           /* Muted Text Colour */
+            --header-primary: #fff;                                 /* Server Title */
+            --header-secondary: #bdbdbd;                            /* Server Text Settings Colour & Channel Topic */
+            --background-accent: hsl(0, 0%, 34%);                   /* Server Boost Small Icon (top right, beisde server name) */
+            
+
+        /* --- Server Interactable Buttons --- */
+        --interactive-normal: #b0b0b0;                              /* Chat Gif Button, Pin Button, Thread Button, etc.*/
+        --interactive-hover: #ffffff;                               /* Hover State */
+        --interactive-active: rgb(255, 255, 255);                   /* Active State */
+        --background-primary-transparent: rgba(26, 26, 26, 0.6);   
+        --background-transparent-header: rgba(49, 49, 49, 0.5);
+        
+        /* --- Settings --- */
+        --background-secondary: #161616a4;                          /* Settings Background & Member List Background & Plugin Header container */
+        --activity-card-background: #242424;
+        --background-modifier-hover: rgba(0, 0, 0, 0.2);
+        --background-modifier-active: rgba(87, 87, 87, 0.24);
+        --background-modifier-selected: rgba(100, 100, 100, 0.2);
+        --background-modifier-accent: rgba(255, 255, 255, 0.2);
+        
+        
+        /* >> Unknown Settings */
+            --background-floating-alt: var(--background-tertiary);
+            --background-mobile-primary: var(--background-tertiary);
+            --background-mobile-secondary: var(--background-tertiary); 
+            --background-secondary-alpha: var(--background-tertiary);
+            --deprecated-quickswitcher-input-background: #191919b7;
+    }
+
 
 /* --- Main Friend List (Friend overview, who are online and stuff) --- */
 /* 9. Friends */
@@ -110,69 +166,53 @@
     padding-right: 10px;
 }
 
-/* --- Main Discord Theme--- */
-.guild-profile,.theme-dark,.theme-dark .theme-light,.userInfo-regn9W,[aria-label="User Profile Modal"],[class^=profileBannerPreview],[class^=userPopout] {
-    
-    /* --- Main Feature Settings --- */
-        --background-primary: #101010;                          /* Discord Background Colour*/
-        --background-secondary-alt: transparent;                  /* Discord Main User Preview (Bottom Left ; Username, Mute, Deafend, Settings container)*/
-        --background-tertiary: #101010;                         /* Discord Main Outer Border Colours (Server Selector background & Window bar) */
-        --channeltextarea-background: #1e1e1e82;                /* Chat Box */
-        --background-floating: #191919f1;                       /* Discord Server User Card & Popout options text background */
-
-    /* --- Text Settings --- */
-        --text-normal: #dedede;                                 /* Text Colour*/
-        --text-muted: #787878;                                  /* Text Colour but for muted text*/
-        --text-link: #00b0f4;                                   /* Text Colour for links*/
-        --text-positive: #4fdc7b;                               /* Text Colour for positive text*/
-        --embed-color: hsl(0, 0%, 34%);                         /* Embed Colour (???)*/
-    
-
-    /* --- Scrollbar Settings --- */
-    /* >> Side channel scrollbar */
-        --scrollbar-thin-thumb: #313131;
-        --scrollbar-thin-track: transparent;
-    /* >> Main Text Scrollbar */
-        --scrollbar-auto-thumb: #313131;
-        --scrollbar-auto-track: #24242455;
-    
-    /* --- Server Channel Settings --- */
-        --channels-default: #919191;                            /* Active Channel Text Colour */
-        --interactive-muted: #555555;                           /* Muted Text Colour */
-        --header-primary: #fff;                                 /* Server Title */
-        --header-secondary: #bdbdbd;                            /* Server Text Settings Colour & Channel Topic */
-        --background-accent: hsl(0, 0%, 34%);                   /* Server Boost Small Icon (top right, beisde server name) */
-        
-
-    /* --- Server Interactable Buttons --- */
-    --interactive-normal: #b0b0b0;                              /* Chat Gif Button, Pin Button, Thread Button, etc.*/
-    --interactive-hover: #ffffff;                               /* Hover State */
-    --interactive-active: rgb(255, 255, 255);                   /* Active State */
-    
-    
-    --background-primary-transparent: rgba(26, 26, 26, 0.6);   
-    --background-transparent-header: rgba(49, 49, 49, 0.5);
-    
-    /* --- Settings --- */
-    --background-secondary: #161616a4;                          /* Settings Background & Member List Background & Plugin Header container */
-    --activity-card-background: #242424;
-    --background-modifier-hover: rgba(0, 0, 0, 0.2);
-    --background-modifier-active: rgba(87, 87, 87, 0.24);
-    --background-modifier-selected: rgba(100, 100, 100, 0.2);
-    --background-modifier-accent: rgba(255, 255, 255, 0.2);
-    
-    
-    /* >> Unknown Settings */
-        --background-floating-alt: var(--background-tertiary);
-        --background-mobile-primary: var(--background-tertiary);
-        --background-mobile-secondary: var(--background-tertiary); 
-        --background-secondary-alpha: var(--background-tertiary);
-
-        --deprecated-quickswitcher-input-background: #191919b7;
-        --deprecated-text-input-border-hover: #e30101;
-        --deprecated-text-input-border-disabled: #e30101;
-        --deprecated-text-input-prefix: #e30101;
+.container-1Lk8p7 {
+    --header-primary: #fff;
+    --header-secondary: #b9bbbe;
+    --text-normal: #dcddde;
+    --interactive-normal: #b9bbbe;
+    --interactive-hover: #dcddde;
+    --interactive-active: #fff;
 }
+
+/* ---------------- [ Custom Member List ]  ----------------*/
+:root{
+    /* --- Member List Offsets --- */
+    --Member-List-Offset: 180px;
+    --Member-List-Username-Offset: 0%;
+}
+
+.content-1U25dZ{
+    position: relative;
+    left: calc(var(--Member-List-Username-Offset));
+}
+
+.container-2o3qEW{
+    position: relative;
+    left: var(--Member-List-Offset);
+    transition: left 0.2s ease-in-out;
+}
+
+.scroller-kQBbkU{
+    width: calc(100% + var(--Member-List-Offset));
+}
+
+/* Message Bar */
+.form-3gdLxP{
+    width: calc(90% + var(--Member-List-Offset));
+}
+
+[aria-label="Hide Member List"]{
+    display: none;
+}
+
+.container-2o3qEW:hover{
+    left: 0px;
+}
+
+
+
+
 
 .container-1Lk8p7 {
     --header-primary: #fff;
@@ -181,13 +221,6 @@
     --interactive-normal: #b9bbbe;
     --interactive-hover: #dcddde;
     --interactive-active: #fff;
-  }
-
-
-
-/* --- Light Theme Option 🤮 --- */
-.theme-light {
-    --background-primary: #000000; 
 }
 
 /* --- Popout Borders --- */
