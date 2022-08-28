@@ -84,7 +84,7 @@
         
         /* --- Main Feature Settings --- */
             --background-primary: #101010;                          /* Discord Background Colour*/
-            --background-secondary-alt: transparent;                  /* Discord Main User Preview (Bottom Left ; Username, Mute, Deafend, Settings container)*/
+            --background-secondary-alt: transparent;                  /* Discord Main User Preview (Bottom Left ; Username, Mute, Deafen, Settings container)*/
             --background-tertiary: #101010;                         /* Discord Main Outer Border Colours (Server Selector background & Window bar) */
             --channeltextarea-background: #1e1e1e82;                /* Chat Box */
             --background-floating: #191919f1;                       /* Discord Server User Card & Popout options text background */
