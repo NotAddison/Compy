@@ -202,6 +202,11 @@
     width: calc(100% + var(--Member-List-Offset));
 }
 
+/* DM Scroll Bar */
+[aria-label=" (channel)"] .scroller-kQBbkU{
+    width: calc(100%);
+}
+
 /* Server Message Bar */
 .form-3gdLxP{
     width: calc(90% + var(--Member-List-Offset));
