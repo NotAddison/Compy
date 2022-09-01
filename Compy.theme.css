@@ -2,7 +2,7 @@
  * @name Compy
  * @author NotAddison
  * @authorLink https://github.com/NotAddison
- * @version 1.1.0
+ * @version 1.1.2
  * @description A Compact Discord Theme. | Dark theme is required!
  * @source https://github.com/NotAddison/Compy
  * @website https://notaddison.github.io/Portfolio/
@@ -11,6 +11,7 @@
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 @import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
+
 
 
 /* ---------------- [ Horizontal Server List ]  ----------------*/
@@ -84,7 +85,7 @@
         
         /* --- Main Feature Settings --- */
             --background-primary: #101010;                          /* Discord Background Colour*/
-            --background-secondary-alt: transparent;                  /* Discord Main User Preview (Bottom Left ; Username, Mute, Deafend, Settings container)*/
+            --background-secondary-alt: transparent;                  /* Discord Main User Preview (Bottom Left ; Username, Mute, Deafen, Settings container)*/
             --background-tertiary: #101010;                         /* Discord Main Outer Border Colours (Server Selector background & Window bar) */
             --channeltextarea-background: #1e1e1e82;                /* Chat Box */
             --background-floating: #191919f1;                       /* Discord Server User Card & Popout options text background */
@@ -228,11 +229,6 @@
 }
 
 
-
-
-
-
-
 .container-1Lk8p7 {
     --header-primary: #fff;
     --header-secondary: #b9bbbe;
@@ -291,4 +287,7 @@
 .fieldList-in8WkP{
     background-color: transparent;
 }
-  
+
+.userPopoutInner-PA9zkU{
+    background-color: rgb(20, 20, 20);
+}
