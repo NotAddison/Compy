@@ -2,7 +2,7 @@
  * @name Compy
  * @author NotAddison
  * @authorLink https://github.com/NotAddison
- * @version 1.1.3
+ * @version 1.1.4
  * @description A Compact Discord Theme. | Dark theme is required!
  * @source https://github.com/NotAddison/Compy
  * @website https://notaddison.github.io/Portfolio/
@@ -89,6 +89,7 @@
             --background-tertiary: #101010;                         /* Discord Main Outer Border Colours (Server Selector background & Window bar) */
             --channeltextarea-background: #1e1e1e82;                /* Chat Box */
             --background-floating: #191919f1;                       /* Discord Server User Card & Popout options text background */
+            --forum-card-background: #161616f9;                     /* Discord Forum Button Cards */
 
         /* --- Text Settings --- */
             --text-normal: #dedede;                                 /* Text Colour*/
@@ -174,6 +175,19 @@
     --interactive-normal: #b9bbbe;
     --interactive-hover: #dcddde;
     --interactive-active: #fff;
+}
+
+/* ---------------- [ Forum Chat ]  ----------------*/
+.container-3wLKDe{
+    width: calc(var(--Member-List-Offset));
+}
+
+.list-3FIpnh{
+    background-color: var(--background-primary);
+}
+
+.mainCard-3KBsBI{
+    background-color: var(--forum-card-background);
 }
 
 /* ---------------- [ Custom Member List ]  ----------------*/
