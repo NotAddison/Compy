@@ -2,7 +2,7 @@
  * @name Compy
  * @author NotAddison
  * @authorLink https://github.com/NotAddison
- * @version 1.1.5
+ * @version 1.1.6
  * @description A Compact Discord Theme. | Dark theme is required!
  * @source https://github.com/NotAddison/Compy
  * @website https://notaddison.github.io/Portfolio/
@@ -92,7 +92,8 @@
             --forum-card-background: #161616f9;                     /* Discord Forum Button Cards */
 
         /* --- Text Settings --- */
-            --text-normal: #dedede;                                 /* Text Colour*/
+            /* --text-normal: #dcddde; */
+            
             --text-muted: #787878;                                  /* Text Colour but for muted text*/
             --text-link: #00b0f4;                                   /* Text Colour for links*/
             --text-positive: #4fdc7b;                               /* Text Colour for positive text*/
