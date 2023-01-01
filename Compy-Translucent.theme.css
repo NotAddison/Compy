@@ -1,0 +1,96 @@
+/**
+ * @name Compy Translucent
+ * @author NotAddison
+ * @authorLink https://github.com/NotAddison
+ * @version 1.0.0
+ * @description A Compact Discord Theme. | Dark theme is required!
+ * @source https://github.com/NotAddison/Compy
+ * @website https://notaddison.github.io/Portfolio/
+
+    -- [ Credits ] --
+    > Base for translucency
+        * @source https://github.com/DiscordStyles/FrostedGlass
+        * @ Frosted Glass
+*/
+
+@import url('https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css');
+@import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
+@import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+@import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
+
+:root {
+  --background-image: rgba(0,0,0,0.1);
+  --background-image-blur: 8px;
+  --background-image-size: cover;
+  --background-image-position: center;
+  --popout-image: rgba(0,0,0,0.93);
+  --popout-image-blur: 5px;
+  --popout-image-size: cover;
+  --popout-image-position: center;
+  --overlay-image: var(--background-image);
+  --overlay-image-blur: 5px;
+  --overlay-image-size: cover;
+  --overlay-image-position: center;
+  --home-button-image: url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg');
+  --home-button-size: cover;
+  --home-button-position: center;
+  --serverlist-brightness: 0.8;
+  --left-brightness: 0.8;
+  --middle-brightness: 0.6;
+  --right-brightness: 0;
+  --popout-modal-brightness: 0.75;
+  --gradient-primary: 103,58,183;
+  --gradient-secondary: 63,81,181;
+  --link-colour: #00b0f4;
+  --scrollbar-colour: rgba(255,255,255,0.05);
+  --gradient-direction: 320deg;
+  --tint-colour: 255,51,159;
+  --tint-brightness: 0;
+  /* --font: Whitney; */
+  --window-padding: 0px;
+  --window-roundness: 0px;
+  --update-notice-1: none;
+  --HSL-server-icon-size: 45px;
+  --HSL-server-spacing: 11px;
+  --rs-small-spacing: 2px;
+  --rs-medium-spacing: 2px;
+  --rs-large-spacing: 2px;
+  --rs-small-width: 2px;
+  --rs-medium-width: 2px;
+  --rs-large-width: 2px;
+  --rs-avatar-shape: 50%;
+  --rs-online-color: #43b581;
+  --rs-idle-color: #faa61a;
+  --rs-dnd-color: #f04747;
+  --rs-offline-color: #636b75;
+  --rs-streaming-color: #643da7;
+  --rs-phone-visible: block;
+}
+
+/* Any custom CSS below here */
+:root{
+  /* --- Member List Offsets --- */
+  --Member-List-Offset: 93%;
+  --Member-List-Username-Offset: 0%;
+}
+
+.content-1U25dZ{
+  position: relative;
+  left: calc(var(--Member-List-Username-Offset));
+}
+
+.container-2o3qEW{
+  position: absolute;
+  left: calc(var(--Member-List-Offset));
+  transition: left 0.2s ease-in-out;
+  max-height: 76.2vh;
+}
+
+.container-2o3qEW:hover{
+  left: calc(var(--Member-List-Offset) - 190px);
+}
+
+/* [FIX] -- User Card Frosted Background color*/
+
+
