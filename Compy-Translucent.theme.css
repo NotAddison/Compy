@@ -2,7 +2,7 @@
  * @name Compy Translucent
  * @author NotAddison
  * @authorLink https://github.com/NotAddison
- * @version 1.0.0
+ * @version 2.0.0
  * @description A Compact Discord Theme. | Dark theme is required!
  * @source https://github.com/NotAddison/Compy
  * @website https://notaddison.github.io/Portfolio/
@@ -20,7 +20,7 @@
 @import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
 
 :root {
-  --background-image: rgba(0,0,0,0.1);
+  --background-image: rgba(0, 0, 0, 0.322);
   --background-image-blur: 8px;
   --background-image-size: cover;
   --background-image-position: center;
@@ -71,8 +71,9 @@
 /* Any custom CSS below here */
 :root{
   /* --- Member List Offsets --- */
-  --Member-List-Offset: 93%;
+  --Member-List-Offset: 92%;
   --Member-List-Username-Offset: 0%;
+  --Memer-list-Cutoff: 74vh;
 }
 
 .content-1U25dZ{
@@ -84,7 +85,11 @@
   position: absolute;
   left: calc(var(--Member-List-Offset));
   transition: left 0.2s ease-in-out;
-  max-height: 76.2vh;
+  max-height: var(--Memer-list-Cutoff);
+
+  background-color: rgba(13, 13, 13, 0.5) !important;
+  border-radius: 20px 0px 0px 20px;
+  padding-bottom: 12px;
 }
 
 .container-2o3qEW:hover{
