@@ -2,7 +2,7 @@
  * @name Compy Translucent
  * @author NotAddison
  * @authorLink https://github.com/NotAddison
- * @version 2.0.0
+ * @version 2.1.0
  * @description A Compact Discord Theme. | Dark theme is required!
  * @source https://github.com/NotAddison/Compy
  * @website https://notaddison.github.io/Portfolio/
@@ -71,8 +71,8 @@
 /* Any custom CSS below here */
 :root{
   /* --- Member List Offsets --- */
-  --Member-List-Offset: 92%;
-  --Member-List-Username-Offset: 0%;
+  --Member-List-Offset: 92.5%;
+  --Member-List-Username-Offset: 2%;
   --Memer-list-Cutoff: 74vh;
 }
 
@@ -93,9 +93,27 @@
 }
 
 .container-2o3qEW:hover{
-  left: calc(var(--Member-List-Offset) - 190px);
+  left: calc(var(--Member-List-Offset) - 175px);
 }
 
-/* [FIX] -- User Card Frosted Background color*/
+/* --- [ Soundboard Modal ] ---*/
+.picker-20lcBA{
+  background: rgba(22, 22, 22, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
 
+/* --- [ GIFs, Stickers & Emoji Modal ] ---*/
+#emoji-picker-tab-panel{
+  background: transparent;
+}
 
+.contentWrapper-3vHNP2{
+  background: rgba(22, 22, 22, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
