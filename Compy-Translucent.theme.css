@@ -2,7 +2,7 @@
  * @name Compy Translucent
  * @author NotAddison
  * @authorLink https://github.com/NotAddison
- * @version 2.1.0
+ * @version 2.1.1
  * @description A Compact Discord Theme. | Dark theme is required!
  * @source https://github.com/NotAddison/Compy
  * @website https://notaddison.github.io/Portfolio/
@@ -90,6 +90,12 @@
   background-color: rgba(13, 13, 13, 0.5) !important;
   border-radius: 20px 0px 0px 20px;
   padding-bottom: 12px;
+}
+
+/* Default modal background */
+.userPopoutInner_ac0960, .popoutBackground__124fb, .container__628c8 {
+  background-color: rgba(13, 13, 13, 1) !important;
+  border-radius: 15px 15px 15px 15px;
 }
 
 .container-2o3qEW:hover{
