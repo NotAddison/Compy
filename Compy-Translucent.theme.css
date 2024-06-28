@@ -2,7 +2,7 @@
  * @name Compy Translucent
  * @author NotAddison
  * @authorLink https://github.com/NotAddison
- * @version 2.1.1
+ * @version 3.0.0
  * @description A Compact Discord Theme. | Dark theme is required!
  * @source https://github.com/NotAddison/Compy
  * @website https://notaddison.github.io/Portfolio/
@@ -73,23 +73,31 @@
   /* --- Member List Offsets --- */
   --Member-List-Offset: 92.5%;
   --Member-List-Username-Offset: 2%;
-  --Memer-list-Cutoff: 74vh;
+  --Memer-list-Cutoff: 90%;
 }
 
-.content-1U25dZ{
+.container_cbd271{
   position: relative;
   left: calc(var(--Member-List-Username-Offset));
 }
 
-.container-2o3qEW{
+.container_cbd271{
   position: absolute;
   left: calc(var(--Member-List-Offset));
   transition: left 0.2s ease-in-out;
   max-height: var(--Memer-list-Cutoff);
 
-  background-color: rgba(13, 13, 13, 0.5) !important;
+  background: rgba(0, 0, 0, 1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
   border-radius: 20px 0px 0px 20px;
   padding-bottom: 12px;
+}
+
+.container_cbd271:hover{
+    left: calc(var(--Member-List-Offset) - 190px);
 }
 
 /* Default modal background */
@@ -102,7 +110,7 @@
   left: calc(var(--Member-List-Offset) - 175px);
 }
 
-/* --- [ Soundboard Modal ] ---*/
+/* --- [ Soundboard Modal ] --- */
 .picker-20lcBA{
   background: rgba(22, 22, 22, 0.5);
   border-radius: 16px;
@@ -111,7 +119,7 @@
   -webkit-backdrop-filter: blur(5px);
 }
 
-/* --- [ GIFs, Stickers & Emoji Modal ] ---*/
+/* --- [ GIFs, Stickers & Emoji Modal ] --- */
 #emoji-picker-tab-panel{
   background: transparent;
 }
@@ -122,4 +130,12 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+}
+
+/* --- [ Activity Panel ] --- */
+.interactionsContainer_a35965{
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
