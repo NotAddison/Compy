@@ -2,29 +2,29 @@
  * @name Compy Translucent
  * @author NotAddison
  * @authorLink https://github.com/NotAddison
- * @version 3.0.0
+ * @version 3.1.0
  * @description A Compact Discord Theme. | Dark theme is required!
  * @source https://github.com/NotAddison/Compy
  * @website https://notaddison.github.io/Portfolio/
 
     -- [ Credits ] --
     > Base for translucency
-        * @source https://github.com/DiscordStyles/FrostedGlass
-        * @ Frosted Glass
+    * @source https://github.com/DiscordStyles/FrostedGlass
+    * @ Frosted Glass
 */
 
-@import url('https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css');
-@import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
-@import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');
-@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
-@import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
+@import url("https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css");
+@import url("https://discordstyles.github.io/Addons/windows-titlebar.css");
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url("https://discordstyles.github.io/Addons/windows-titlebar.css");
 
 :root {
   --background-image: rgba(0, 0, 0, 0.322);
   --background-image-blur: 8px;
   --background-image-size: cover;
   --background-image-position: center;
-  --popout-image: rgba(0,0,0,0.93);
+  --popout-image: rgba(0, 0, 0, 0.93);
   --popout-image-blur: 5px;
   --popout-image-size: cover;
   --popout-image-position: center;
@@ -32,7 +32,7 @@
   --overlay-image-blur: 5px;
   --overlay-image-size: cover;
   --overlay-image-position: center;
-  --home-button-image: url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg');
+  --home-button-image: url("https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg");
   --home-button-size: cover;
   --home-button-position: center;
   --serverlist-brightness: 0.8;
@@ -40,12 +40,12 @@
   --middle-brightness: 0.6;
   --right-brightness: 0;
   --popout-modal-brightness: 0.75;
-  --gradient-primary: 103,58,183;
-  --gradient-secondary: 63,81,181;
+  --gradient-primary: 103, 58, 183;
+  --gradient-secondary: 63, 81, 181;
   --link-colour: #00b0f4;
-  --scrollbar-colour: rgba(255,255,255,0.05);
+  --scrollbar-colour: rgba(255, 255, 255, 0.05);
   --gradient-direction: 320deg;
-  --tint-colour: 255,51,159;
+  --tint-colour: 255, 51, 159;
   --tint-brightness: 0;
   /* --font: Whitney; */
   --window-padding: 0px;
@@ -69,19 +69,19 @@
 }
 
 /* Any custom CSS below here */
-:root{
+:root {
   /* --- Member List Offsets --- */
   --Member-List-Offset: 92.5%;
   --Member-List-Username-Offset: 2%;
   --Memer-list-Cutoff: 90%;
 }
 
-.container_cbd271{
+.container_cbd271 {
   position: relative;
   left: calc(var(--Member-List-Username-Offset));
 }
 
-.container_cbd271{
+.container_cbd271 {
   position: absolute;
   left: calc(var(--Member-List-Offset));
   transition: left 0.2s ease-in-out;
@@ -96,22 +96,24 @@
   padding-bottom: 12px;
 }
 
-.container_cbd271:hover{
-    left: calc(var(--Member-List-Offset) - 190px);
+.container_cbd271:hover {
+  left: calc(var(--Member-List-Offset) - 190px);
 }
 
-/* Default modal background */
-.userPopoutInner_ac0960, .popoutBackground__124fb, .container__628c8 {
+/* --- [ Default Background Modal ] --- */
+.userPopoutInner_ac0960,
+.popoutBackground__124fb,
+.container__628c8 {
   background-color: rgba(13, 13, 13, 1) !important;
   border-radius: 15px 15px 15px 15px;
 }
 
-.container-2o3qEW:hover{
+.container-2o3qEW:hover {
   left: calc(var(--Member-List-Offset) - 175px);
 }
 
 /* --- [ Soundboard Modal ] --- */
-.picker-20lcBA{
+.picker-20lcBA {
   background: rgba(22, 22, 22, 0.5);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -120,22 +122,29 @@
 }
 
 /* --- [ GIFs, Stickers & Emoji Modal ] --- */
-#emoji-picker-tab-panel{
-  background: transparent;
-}
 
-.contentWrapper-3vHNP2{
-  background: rgba(22, 22, 22, 0.5);
-  border-radius: 16px;
+.contentWrapper_af5dbb {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 /* --- [ Activity Panel ] --- */
-.interactionsContainer_a35965{
+.interactionsContainer_a35965 {
   background: rgba(0, 0, 0, 0.6);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+}
+
+/*  --- [ Poll Panel ] --- */
+.root_f9a4c9 {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* --- [ Gift Nitro Button : Hide ] --- */
+.container_efde15 {
+  display: none;
 }
