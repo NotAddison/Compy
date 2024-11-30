@@ -2,7 +2,7 @@
  * @name Compy Translucent
  * @author NotAddison
  * @authorLink https://github.com/NotAddison
- * @version 3.1.0
+ * @version 3.1.1
  * @description A Compact Discord Theme. | Dark theme is required!
  * @source https://github.com/NotAddison/Compy
  * @website https://notaddison.github.io/Portfolio/
@@ -145,6 +145,6 @@
 }
 
 /* --- [ Gift Nitro Button : Hide ] --- */
-.container_efde15 {
+button[aria-label="Send a gift"] {
   display: none;
 }
