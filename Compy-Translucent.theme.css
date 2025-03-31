@@ -2,21 +2,24 @@
  * @name Compy Translucent
  * @author NotAddison
  * @authorLink https://github.com/NotAddison
- * @version 3.1.1
+ * @version 4.0.0
  * @description A Compact Discord Theme. | Dark theme is required!
  * @source https://github.com/NotAddison/Compy
- * @website https://notaddison.github.io/Portfolio/
+ * @website https://synflux.tech/
 
     -- [ Credits ] --
-    > Base for translucency
+    >> Base for translucency
     * @source https://github.com/DiscordStyles/FrostedGlass
     * @ Frosted Glass
+
+    >> Windows MacOS Action Button
+    * @source https://github.com/refact0r/midnight-discord
+    * @ Midnight by refact0r
 */
 
 @import url("https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css");
-@import url("https://discordstyles.github.io/Addons/windows-titlebar.css");
-@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
-@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url("https://raw.githubusercontent.com/DiscordStyles/HorizontalServerList/refs/heads/deploy/HorizontalServerList.css");
+@import url("https://discordstyles.github.io/RadialStatus/RadialStatus.css");
 @import url("https://discordstyles.github.io/Addons/windows-titlebar.css");
 
 :root {
@@ -47,7 +50,6 @@
   --gradient-direction: 320deg;
   --tint-colour: 255, 51, 159;
   --tint-brightness: 0;
-  /* --font: Whitney; */
   --window-padding: 0px;
   --window-roundness: 0px;
   --update-notice-1: none;
@@ -61,27 +63,32 @@
   --rs-large-width: 2px;
   --rs-avatar-shape: 50%;
   --rs-online-color: #43b581;
-  --rs-idle-color: #faa61a;
+  --rs-idle-color: #fab43c;
   --rs-dnd-color: #f04747;
   --rs-offline-color: #636b75;
   --rs-streaming-color: #643da7;
   --rs-phone-visible: block;
 }
 
-/* Any custom CSS below here */
+/* Windows Button Controll */
+:root {
+  --window-control-size: 14px; /* size of custom window controls */
+}
+
+/* --- [ Member List ] --- */
 :root {
   /* --- Member List Offsets --- */
   --Member-List-Offset: 92.5%;
   --Member-List-Username-Offset: 2%;
-  --Memer-list-Cutoff: 90%;
+  --Memer-list-Cutoff: 89%;
 }
 
-.container_cbd271 {
+.container_c8ffbb {
   position: relative;
   left: calc(var(--Member-List-Username-Offset));
 }
 
-.container_cbd271 {
+.container_c8ffbb {
   position: absolute;
   left: calc(var(--Member-List-Offset));
   transition: left 0.2s ease-in-out;
@@ -96,7 +103,7 @@
   padding-bottom: 12px;
 }
 
-.container_cbd271:hover {
+.container_c8ffbb:hover {
   left: calc(var(--Member-List-Offset) - 190px);
 }
 
@@ -147,4 +154,43 @@
 /* --- [ Gift Nitro Button : Hide ] --- */
 button[aria-label="Send a gift"] {
   display: none;
+}
+
+/* ---- [ Windows MACOS Action Button Styles ] ---- */
+.winButtons_c38106 {
+  gap: 0;
+  padding-right: calc(var(--gap) - (var(--window-control-size) / 2) + 1px);
+}
+.winButtons_c38106::before {
+  margin-right: calc(var(--custom-app-top-bar-height) / 4);
+}
+.winButton_c38106 > svg {
+  display: none;
+}
+.winButton_c38106 {
+  background: none !important;
+  width: calc(var(--window-control-size) * 2);
+  height: var(--custom-app-top-bar-height);
+}
+.winButton_c38106::after {
+  display: block;
+  content: "";
+  height: var(--window-control-size);
+  width: var(--window-control-size);
+  border-radius: 50%;
+}
+.winButton_c38106:hover::after {
+  filter: brightness(0.7);
+}
+.winButton_c38106:active::after {
+  transform: scale(0.9);
+}
+.winButtonClose_c38106::after {
+  background-color: var(--rs-dnd-color) !important;
+}
+.winButtonMinMax_c38106:nth-child(1)::after {
+  background-color: var(--rs-idle-color) !important;
+}
+.winButtonMinMax_c38106:nth-child(2)::after {
+  background-color: var(--rs-online-color) !important;
 }
